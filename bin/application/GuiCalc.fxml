@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <AnchorPane prefHeight="427.0" prefWidth="268.0" style="-fx-background-color: FireBrick;">
+         <children>
+            <TextField fx:id="txtR" layoutX="8.0" layoutY="35.0" prefHeight="56.0" prefWidth="251.0">
+               <font>
+                  <Font name="Tahoma Bold" size="14.0" />
+               </font></TextField>
+            <Button layoutX="13.0" layoutY="162.0" mnemonicParsing="false" onAction="#getNum" prefHeight="56.0" prefWidth="55.0" style="-fx-background-color: Teal;" text="1" textFill="#f5f3f3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Button>
+            <RadioButton layoutX="23.0" layoutY="119.0" mnemonicParsing="false" onAction="#getOper" text="+" textFill="#f5f5f8">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="g1" />
+               </toggleGroup></RadioButton>
+            <Button layoutX="74.0" layoutY="162.0" mnemonicParsing="false" onAction="#getNum" prefHeight="56.0" prefWidth="55.0" style="-fx-background-color: Teal;" text="2" textFill="#f5f3f3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="136.0" layoutY="162.0" mnemonicParsing="false" onAction="#getNum" prefHeight="56.0" prefWidth="55.0" style="-fx-background-color: Teal;" text="3" textFill="#f5f3f3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="197.0" layoutY="162.0" mnemonicParsing="false" onAction="#getNum" prefHeight="56.0" prefWidth="55.0" style="-fx-background-color: Teal;" text="4" textFill="#f5f3f3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="226.0" mnemonicParsing="false" onAction="#getNum" prefHeight="56.0" prefWidth="55.0" style="-fx-background-color: Teal;" text="5" textFill="#f5f3f3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="75.0" layoutY="226.0" mnemonicParsing="false" onAction="#getNum" prefHeight="56.0" prefWidth="55.0" style="-fx-background-color: Teal;" text="6" textFill="#f5f3f3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="137.0" layoutY="226.0" mnemonicParsing="false" onAction="#getNum" prefHeight="56.0" prefWidth="55.0" style="-fx-background-color: Teal;" text="7" textFill="#f5f3f3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="198.0" layoutY="226.0" mnemonicParsing="false" onAction="#getNum" prefHeight="56.0" prefWidth="55.0" style="-fx-background-color: Teal;" text="8" textFill="#f5f3f3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="289.0" mnemonicParsing="false" onAction="#getNum" prefHeight="56.0" prefWidth="55.0" style="-fx-background-color: Teal;" text="9" textFill="#f5f3f3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="75.0" layoutY="289.0" mnemonicParsing="false" onAction="#getNum" prefHeight="56.0" prefWidth="55.0" style="-fx-background-color: Teal;" text="0" textFill="#f5f3f3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="137.0" layoutY="289.0" mnemonicParsing="false" onAction="#getNum" prefHeight="56.0" prefWidth="55.0" style="-fx-background-color: Teal;" text="." textFill="#f5f3f3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="198.0" layoutY="289.0" mnemonicParsing="false" onAction="#opSelect" prefHeight="56.0" prefWidth="55.0" style="-fx-background-color: Teal;" text="=" textFill="#f5f3f3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <RadioButton layoutX="83.0" layoutY="120.0" mnemonicParsing="false" onAction="#getOper" text="-" textFill="#f5f5f8" toggleGroup="$g1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton layoutX="146.0" layoutY="122.0" mnemonicParsing="false" onAction="#getOper" text="*" textFill="#f5f5f8" toggleGroup="$g1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton layoutX="207.0" layoutY="123.0" mnemonicParsing="false" onAction="#getOper" text="/" textFill="#f5f5f8" toggleGroup="$g1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <Button layoutX="16.0" layoutY="357.0" mnemonicParsing="false" onAction="#clearSreen" prefHeight="56.0" prefWidth="237.0" style="-fx-background-color: Teal;" text="CL" textFill="#f5f3f3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
